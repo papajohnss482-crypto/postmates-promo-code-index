@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://papajohnss482-crypto.github.io/postmates-promo-code-index/sitemap.xml

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Methodology: How the Postmates Promo Code Index Is Built</title>
+<meta name="description" content="How this dataset collects Postmates codes, what verified in-app and community-reported actually mean, and the strict rules on check dates, expiry dates, and delistings.">
+<link rel="canonical" href="https://papajohnss482-crypto.github.io/postmates-promo-code-index/methodology.html">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+<header class="site">
+  <div class="brand">Postmates Promo Code Index</div>
+  <nav>
+    <a href="index.html">Dataset</a>
+    <a href="methodology.html">Methodology</a>
+    <a href="changelog.html">Changelog</a>
+  </nav>
+</header>
+
+<h1>Methodology</h1>
+
+<h2>Two kinds of records, two kinds of evidence</h2>
+<p><strong>Verified in-app.</strong> Programs with this label were seen on screens inside the official Postmates app, on the dates printed with them. In October 2026 that covers the Uber One trial and price, the $12 Meal Deals structure, and the referral amounts. In-app evidence is the strongest available, because it is what a user's own account will honor.</p>
+<p><strong>Community-reported.</strong> Codes with this label were shared by users who reported them working, and collected from public deal communities by the source publication. They carry the date they were checked against those reports. They are never described as tested, because nobody outside Postmates can truly test whether a targeted code will accept a different account.</p>
+
+<h2>The source record</h2>
+<p>This dataset is a versioned snapshot of the live list maintained at <a href="https://postmatescoupons.us/">Postmates Coupons</a>, the source publication for this index. The snapshot on this site reflects the source as published on October 17, 2026. Between snapshots, the live list is the newer record. When the two differ, believe the live list and treat this dataset as the dated snapshot it declares itself to be.</p>
+
+<h2>Rules on dates</h2>
+<ul>
+  <li>Last checked is the genuine date of the check. It is never edited forward.</li>
+  <li>Expiry printed by listing sources is recorded as per community reports (unverified), because tracking shows listing countdowns being extended while the offer itself does not change.</li>
+  <li>Where the source record prints a specific expiry date, the dataset reproduces it and says so, for example the October 25, 2026 date on eats-q1zgtnn8i6.</li>
+  <li>Snapshot dates and publication dates are always shown separately, so a reader can see both when the data was checked and when this file was made.</li>
+</ul>
+
+<h2>Rules on delisting</h2>
+<p>When a code is delisted at its source, the next dataset version removes it and the removal is written into the <a href="changelog.html">changelog</a> with a date. Delisted codes are dropped, never held with a new expiry, and never left in the table marked as current. The changelog is the dataset's memory: additions, removals, and corrections all stay visible there.</p>
+
+<h2>Known limits of version 1.0</h2>
+<ul>
+  <li>The community code records were checked on October 2, 2026. They are the honest state of the record, and they are aging. The next snapshot follows the source publication's next check cycle.</li>
+  <li>Targeting is invisible from outside. The dataset records scope exactly as reported, for example the Las Vegas restriction on FINALKICK, but only the app can confirm assignment to a specific account.</li>
+  <li>Grocery and restaurant offer tags are location specific and are not code records, so they are described in research publications rather than listed here as data.</li>
+</ul>
+
+<footer>
+  <p>Postmates Promo Code Index is an independent open dataset, not affiliated with Postmates or Uber.</p>
+</footer>
+</div>
+</body>
+</html>
