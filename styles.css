@@ -31,4 +31,8 @@ code{background:#eef3fa;padding:2px 7px;border-radius:4px;font-weight:bold;font-
 ul{margin:8px 0 8px 20px;padding:0} li{margin:5px 0}
 a{color:var(--accent)}
 footer{border-top:2px solid var(--line);margin-top:44px;padding-top:14px;font-size:14px;color:var(--muted)}
+.footnav{margin-top:12px;font-size:14px}
+.footnav a{margin-right:14px;text-decoration:none}
+ol{margin:8px 0 8px 20px;padding:0} ol li{margin:5px 0}
+@media(max-width:640px){h1{font-size:26px}nav a{display:inline-block;margin-bottom:6px}}
 .scroll{overflow-x:auto}
